@@ -5,7 +5,7 @@
       [selectedProduct]="selectedProduct$ | async"
       [errorMessage]="errorMessage$ | async"
       [products]="products$ | async"
-      (checked)="checkChanges($event)"
+      (checked)="checkChanged($event)"
       (initializedNewProduct)="newProduct()"
       (selected)="productSelected($event)"
     ></pm-product-list>
